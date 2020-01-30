@@ -5,6 +5,7 @@ import Homepage from './pages/homepage/Homepage.component';
 import ShopPage from './pages/shop/ShopPage.component';
 import Header from './components/header/Header.component';
 import Signinsignup from './pages/authentication/Signinsignup.component';
+
 import { auth } from './firebase/firebase.utils';
 
 class App extends Component {
@@ -28,7 +29,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header currentUser={this.state.currentUser} />
+        <Header />
         <Switch>
           <Route exact path='/' component={Homepage} />
           <Route exact path='/shop' component={ShopPage} />

@@ -7,6 +7,8 @@ import Header from './components/header/Header.component';
 import Signinsignup from './pages/authentication/Signinsignup.component';
 import { auth } from './firebase/firebase.utils';
 
+import { auth } from './firebase/firebase.utils';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -28,7 +30,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header currentUser={this.state.currentUser} />
+        <Header />
         <Switch>
           <Route exact path='/' component={Homepage} />
           <Route exact path='/shop' component={ShopPage} />
